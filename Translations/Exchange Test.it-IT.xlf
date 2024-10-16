@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="it-IT" original="Exchange Test">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3145283264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country By Currency</source>
+          <target state="translated">Paese per valuta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Country By Currency - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145283264 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">Codice</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Country By Currency - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145283264 - Field 2464412217 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country/Region ISO Code</source>
+          <target state="translated">Paese/Regione Codice ISO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Country By Currency - Field Country/Region ISO Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145283264 - Field 2908670124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Country/Region Name</source>
+          <target state="translated">Nome paese/regione</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Country By Currency - Field Country/Region Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3145283264 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <target state="translated">Codice Valuta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Country By Currency - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange Currency Info</source>
+          <target state="translated">Informazioni sulla valuta di cambio</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - NamedType 513202237" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Authentication Code Not Found</source>
+          <target state="translated">Codice di autenticazione non trovato</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - NamedType AuthenticationCodeNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - NamedType 780735546" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error call %1</source>
+          <target state="translated">Errore chiamata %1</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Description of error</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - NamedType SomethingWrongErr</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Method 4268226447 - NamedType 3693459255" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Token named %1 not found</source>
+          <target state="translated">Token denominato %1 non trovato</target>
+          <note from="Developer" annotates="general" priority="2">%1=Key Name to Search</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Method GetValueByToken - NamedType TokenNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Method 2371529633 - NamedType 1178781371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Retrieving requested information, in progress..</source>
+          <target state="translated">Recupero delle informazioni richieste, in corso...</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Method UpdateInfo - NamedType ProcessLbl</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Method 2225982788 - NamedType 1178781371" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Retrieving requested information, in progress..</source>
+          <target state="translated">Recupero delle informazioni richieste, in corso.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Method UpdateInfoWithOauth2 - NamedType ProcessLbl</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target state="translated">Codice</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 2595622121 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal Digits</source>
+          <target state="translated">Cifre decimali</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Decimal Digits - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 535429760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Icon Name</source>
+          <target state="translated">Nome icona</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Icon Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <target state="translated">Nome</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 3537062371 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name Plural</source>
+          <target state="translated">Nome Plurale</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Name Plural - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 1283429908 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Roundring</source>
+          <target state="translated">Arrotondamento</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Roundring - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 1442938154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Symbol</source>
+          <target state="translated">Simbolo</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Symbol - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 3310897673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Symbol Native</source>
+          <target state="translated">Simbolo nativo</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Symbol Native - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 658156254 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <target state="translated">Tipo</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Field Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1498845407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Countries By Currency</source>
+          <target state="translated">Paesi per valuta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Countries By Currency SubPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1498845407 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <target state="translated">Specifica il valore del campo Codice.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Countries By Currency SubPage - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1498845407 - Control 2464412217 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country/Region ISO Code field.</source>
+          <target state="translated">Specifica il valore del campo Codice ISO Paese.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Countries By Currency SubPage - Control Country/Region ISO Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1498845407 - Control 2908670124 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Country/Region Name field.</source>
+          <target state="translated">Specifica il valore del campo Nome paese.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Countries By Currency SubPage - Control Country/Region Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Info Card</source>
+          <target state="translated">Scheda informativa valuta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <target state="translated">Generale</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <target state="translated">Specifica il valore del campo Codice.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 2595622121 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Decimal Digits field.</source>
+          <target state="translated">Specifica il valore del campo Cifre decimali.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Decimal Digits - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 535429760 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Icon Name field.</source>
+          <target state="translated">Specifica il valore del campo Nome icona.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Icon Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name field.</source>
+          <target state="translated">Specifica il valore del campo Nome.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 3537062371 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name Plural field.</source>
+          <target state="translated">Specifica il valore del campo Nome plurale.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Name Plural - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 1283429908 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Roundring field.</source>
+          <target state="translated">Specifica il valore del campo Arrotondamento.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Roundring - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 1442938154 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Symbol field.</source>
+          <target state="translated">Specifica il valore del campo Simbolo.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Symbol - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 3310897673 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Symbol Native field.</source>
+          <target state="translated">Specifica il valore del campo Simbolo nativo.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Symbol Native - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <target state="translated">Specifica il valore del campo Tipo.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Currency Info Card - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 151086385 - Action 2255690061 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4081634891">
+          <source>Additional Info by Currency API Service</source>
+          <target state="translated">Ulteriori informazioni per servizio API Currency</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Currency Utility - Action GetCurrencyInfoByCurrencyAPI - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 151086385 - Action 2255690061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4081634891">
+          <source>Additional Info</source>
+          <target state="translated">Info Aggiuntive</target>
+          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Currency Utility - Action GetCurrencyInfoByCurrencyAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 3077359538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>AI Utilities</source>
+          <target state="translated">Utilità AI</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action AIUtilities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 1968785495 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>IA cans find additional information of missed countries for create new Country/Region in Business Central</source>
+          <target state="translated">IA può trovare ulteriori informazioni sui paesi mancanti per creare un nuovo paese in Business Central</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action GetMissedCountries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 1968785495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Get Missed Countries</source>
+          <target state="translated">Ottieni paesi persi</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action GetMissedCountries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 3595332187 - EnumValue 4265970709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3058546390">
+          <source>Exchange</source>
+          <target state="translated">Scambio</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Exc. Copilot Cap. Ext. - EnumValue Exchange - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
