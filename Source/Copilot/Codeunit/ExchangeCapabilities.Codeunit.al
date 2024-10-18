@@ -38,9 +38,9 @@ codeunit 50102 "Exchange Capabilities"
 
     end;
 
-    [EventSubscriber(ObjectType::Page, Page::"Copilot AI Capabilities", OnRegisterCopilotCapability, '', false, false)]
+    /*[EventSubscriber(ObjectType::Page, Page::"Copilot AI Capabilities", OnRegisterCopilotCapability, '', false, false)]
     local procedure OnRegisterCopilotCapability()
     begin
         RegisterCapability();
-    end;
+    end;*/
 }

@@ -15,8 +15,14 @@ codeunit 50104 "Exchange Utilities"
         JsonArray: JsonArray;
         Countries: Text;
         ResultModel: Text;
-
+        ResultJsonArray: JsonArray;
+        ResultJsonToken: JsonToken;
+        ResultJsonObject: JsonObject;
+        Win: Dialog;
+        ChattingTxt: Label 'IA: Generating...';
     begin
+
+        Win.Open(ChattingTxt);
 
         //Genero un json array per elencare i paesi che serve recuperare
         rCountries.SetRange("Country/Region Name", '');
@@ -38,21 +44,43 @@ codeunit 50104 "Exchange Utilities"
         //Ecco la richiesta vera e propria
         Request += 'I would like you to gather the information for these countries using this format. ';
 
+        //Puntualizzazione, non generava i dati ma solo il codice iso 2
+        Request += 'It''s important obtain a name of caountry. ';
+
         //Fornisco il modello in formato json che mi aspetto come risultato
         Request += 'This is a model for one country, use this model for every country that you find. ';
         CountryRegion.GetJson().WriteTo(ResultModel);
         Request += ResultModel;
+
+        //Puntualizzazioni
+        Request += 'For the result use array json of object. ';
+        //Request += 'Example: [ {object of country 1}, {object of country 2}, {object of country 3} ] ';
 
         //Piccolo trick, in generale aiuta IA a ragionare passo passo, aiuta a "ragionare" prima di fornire il risultato. 
         //Ma.........occhio ai token!!!!
         Request += 'Now proceed step by step. ';
 
         //Il gran finale!!!
-        Request += 'You have to give me only json result.';
+        Request += 'Remeber! You have to give me only json result, I don''t whant anything else. ';
 
         Result := ExchangeCopilot.Chat(GetSystemPrompt(), Request);
 
-        Message(Result);
+        //Message(Result);
+
+        ResultJsonObject.ReadFrom(Result);
+        if not ResultJsonObject.Get('countries', ResultJsonToken) then begin
+            Win.Close();
+            Error(Result);
+        end;
+
+        ResultJsonArray := ResultJsonToken.AsArray();
+
+        foreach ResultJsonToken in ResultJsonArray do begin
+            ResultJsonObject := ResultJsonToken.AsObject();
+            CountryRegion.InsertFromJson(ResultJsonObject);
+        end;
+
+        Win.Close();
 
     end;
 

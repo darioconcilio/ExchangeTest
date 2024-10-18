@@ -15,6 +15,8 @@ codeunit 50103 "Exchange AI Settings"
     begin
         if EndpointUrl = '' then
             IsolatedStorage.Get(EndpointUrlKeyNameTxt, EndpointUrl);
+
+        exit(EndpointUrl);
     end;
 
     procedure SetEndpointUrl(EndpointUrlToSave: Text)
@@ -27,6 +29,8 @@ codeunit 50103 "Exchange AI Settings"
     begin
         if SecretKey.IsEmpty() then
             IsolatedStorage.Get(SecretKeyKeyNameTxt, SecretKey);
+
+        exit(SecretKey);
     end;
 
     procedure SetSecretKey(SecretKeyToSave: Text)
@@ -39,6 +43,8 @@ codeunit 50103 "Exchange AI Settings"
     begin
         if DeploymentKey = '' then
             IsolatedStorage.Get(DeploymentKeyKeyNameTxt, DeploymentKey);
+
+        exit(DeploymentKey);
     end;
 
     procedure SetDeployment(DeploymentToSave: Text)

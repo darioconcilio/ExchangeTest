@@ -20,4 +20,27 @@ tableextension 50100 "Country/Region Ext." extends "Country/Region"
         Result.Add(Rec.FieldName("Foreign Country/Region Code").ToLower(), '');
 
     end;
+
+    procedure InsertFromJson(CountryToAdd: JsonObject)
+    begin
+
+        Rec.Init();
+        Rec.Code := Format(UpperCase(GetfromToken(CountryToAdd, Rec.FieldName(Code).ToLower())), 10);
+        Rec.Name := Format(GetfromToken(CountryToAdd, Rec.FieldName(Name).ToLower()), 10);
+        Rec."ISO Code" := Format(GetfromToken(CountryToAdd, Rec.FieldName("ISO Code").ToLower()), 2);
+        Rec."ISO Numeric Code" := Format(GetfromToken(CountryToAdd, Rec.FieldName("ISO Numeric Code").ToLower()), 3);
+
+        if not Rec.Insert() then
+            Rec.Modify();
+    end;
+
+    local procedure GetfromToken(CountryToAdd: JsonObject; KeyName: Text): Text
+    var
+        FieldJsonToken: JsonToken;
+    begin
+        if CountryToAdd.Get(KeyName, FieldJsonToken) then
+            exit(FieldJsonToken.AsValue().AsText());
+
+        exit('');
+    end;
 }

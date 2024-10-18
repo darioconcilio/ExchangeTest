@@ -13,8 +13,7 @@
             "breakOnError": "All",
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true,
-            "schemaUpdateMode": "ForceSync"
+            "enableSqlInformationDebugger": true
         },
         {
             "name": "Crystal Cave (Sandbox - TestDynaARX)",

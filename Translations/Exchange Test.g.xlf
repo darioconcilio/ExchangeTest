@@ -8,6 +8,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Exchange Copilot - Method Chat - NamedType MaxModelRequestTokensErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2144157031 - Method 3867556164 - NamedType 1112260318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IA: Generating...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Exchange Utilities - Method GetCountries - NamedType ChattingTxt</note>
+        </trans-unit>
         <trans-unit id="Table 3145283264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Country By Currency</source>
           <note from="Developer" annotates="general" priority="2"></note>
