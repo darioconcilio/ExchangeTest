@@ -34,46 +34,40 @@ codeunit 50104 "Exchange Utilities"
             until rCountries.Next() = 0;
 
         //Preparo la prima parte della richiesta
-        Request := 'Now retrieve the information for the countries I will provide, ';
-        Request += 'I will only give you the ISO 2-character codes. ';
+        Request := 'Give me info about these countriers ';
 
         //Aggiungo l'elenco dei paesi da cercare
         JsonArray.WriteTo(Countries);
         Request += Countries;
 
         //Ecco la richiesta vera e propria
-        Request += 'I would like you to gather the information for these countries using this format. ';
-
-        //Puntualizzazione, non generava i dati ma solo il codice iso 2
-        Request += 'It''s important obtain a name of caountry. ';
+        Request += ' these are ISO-2 Code. ';
 
         //Fornisco il modello in formato json che mi aspetto come risultato
-        Request += 'This is a model for one country, use this model for every country that you find. ';
+        Request += 'Use this model json for response ';
         CountryRegion.GetJson().WriteTo(ResultModel);
         Request += ResultModel;
 
         //Puntualizzazioni
-        Request += 'For the result use array json of object. ';
-        //Request += 'Example: [ {object of country 1}, {object of country 2}, {object of country 3} ] ';
+        Request += ' For the result use array of object. ';
+        //Request += ' You have to response only in json format, You don''t ever response adding comment.';
 
         //Piccolo trick, in generale aiuta IA a ragionare passo passo, aiuta a "ragionare" prima di fornire il risultato. 
         //Ma.........occhio ai token!!!!
-        Request += 'Now proceed step by step. ';
-
-        //Il gran finale!!!
-        Request += 'Remeber! You have to give me only json result, I don''t whant anything else. ';
+        //Request += 'Proceed step by step. '; //SERVE SE DEVE PROCEDERE PER LOGICA IN DIVERSI PASSAGGI
 
         Result := ExchangeCopilot.Chat(GetSystemPrompt(), Request);
 
         //Message(Result);
 
-        ResultJsonObject.ReadFrom(Result);
-        if not ResultJsonObject.Get('countries', ResultJsonToken) then begin
+        //ResultJsonObject.ReadFrom(Result);
+        ResultJsonArray.ReadFrom(Result);
+        /*if not ResultJsonObject.Get('countries', ResultJsonToken) then begin
             Win.Close();
             Error(Result);
-        end;
+        end;*/
 
-        ResultJsonArray := ResultJsonToken.AsArray();
+        //ResultJsonArray := ResultJsonObject.AsToken().AsArray();
 
         foreach ResultJsonToken in ResultJsonArray do begin
             ResultJsonObject := ResultJsonToken.AsObject();
@@ -86,14 +80,8 @@ codeunit 50104 "Exchange Utilities"
 
     local procedure GetSystemPrompt() SystemPrompt: Text
     begin
-        SystemPrompt := 'You are working in a Business Central environment,';
-        SystemPrompt += 'viewing the list of currencies managed by Business Central.';
-        SystemPrompt += 'A program has been developed that retrieves information about a selected currency';
-        SystemPrompt += 'and identifies the countries using that currency.';
-        SystemPrompt += 'However, some of these countries might not yet be coded in Business Central.';
-        SystemPrompt += 'The user will provide a list of countries using only the ISO 2-character code.';
-        SystemPrompt += 'You are tasked with retrieving all the necessary information to code these missing countries';
-        SystemPrompt += 'into Business Central, ensuring that the data is complete and compatible with Business Central requirements.';
-        SystemPrompt += 'The output should provide all relevant details needed by Business Central.';
+        SystemPrompt := 'You are an assistant expert relative currency, ';
+        SystemPrompt += 'response information about currencies and countries. ';
+        SystemPrompt += 'You have to response only in json format, You don''t ever response adding comment.';
     end;
 }

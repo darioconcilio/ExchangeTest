@@ -34,15 +34,16 @@ codeunit 50101 "Exchange Copilot"
                                      ApiKey);
 
         //Numero massimo di token da utilizzare
-        AOAIChatCompletionParams.SetMaxTokens(1500);
+        AOAIChatCompletionParams.SetMaxTokens(800);
 
         //Livello di "intelligenza"
-        AOAIChatCompletionParams.SetTemperature(0);
+        AOAIChatCompletionParams.SetTemperature(0.7);
+        //AOAIChatCompletionParams.SetJsonMode(true); //IMPORTANTE!!!!!
 
         AzureOpenAI.SetCopilotCapability(Enum::"Copilot Capability"::Exchange);
 
         //Esecuzione della chiamata
-        if AOAIToken.GetGPT35TokenCount(SystemPrompt) + AOAIToken.GetGPT35TokenCount(ChatUserPrompt) <= MaxModelRequestTokens() then begin
+        if AOAIToken.GetGPT4TokenCount(SystemPrompt) + AOAIToken.GetGPT4TokenCount(ChatUserPrompt) <= MaxModelRequestTokens() then begin
 
             //Preparazione del contesto
             AOAIChatMessages.SetPrimarySystemMessage(SystemPrompt);
@@ -52,22 +53,24 @@ codeunit 50101 "Exchange Copilot"
 
             AzureOpenAI.GenerateChatCompletion(AOAIChatMessages, AOAIChatCompletionParams, AOAIOperationResponse);
             if AOAIOperationResponse.IsSuccess() then
-                Result := AOAIChatMessages.GetLastMessage();
-            exit(Result);
+                Result := AOAIChatMessages.GetLastMessage()
+            else
+                Error(AOAIOperationResponse.GetError());
+            //exit(Result);
         end else
             Error(MaxModelRequestTokensErr);
 
         //Gestione dell'esito
-        if AOAIOperationResponse.IsSuccess() then
+        /*if AOAIOperationResponse.IsSuccess() then
             Result := AOAIChatMessages.GetLastMessage()
         else
-            Error(AOAIOperationResponse.GetError());
+            Error(AOAIOperationResponse.GetError());*/
 
-        exit(Result);
+        //exit(Result);
     end;
 
     local procedure MaxModelRequestTokens(): integer
     begin
-        exit(2500)
+        exit(128000)
     end;
 }

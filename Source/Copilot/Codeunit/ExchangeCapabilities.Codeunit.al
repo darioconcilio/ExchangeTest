@@ -18,7 +18,7 @@ codeunit 50102 "Exchange Capabilities"
     var
         ExchangeAISettings: Codeunit "Exchange AI Settings";
         SecretKeyTok: Label 'b32192a1f0a5420f9af781c4c24674ac', Locked = true;
-        DeploymentTxt: Label 'gpt-35-turbo', Locked = true;
+        DeploymentTxt: Label 'gpt-4', Locked = true;
         EndpointUrlTxt: Label 'https://exchangetestai.openai.azure.com/', Locked = true;
 
 
