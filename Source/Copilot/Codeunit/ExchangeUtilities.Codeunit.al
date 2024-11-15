@@ -45,7 +45,9 @@ codeunit 50104 "Exchange Utilities"
 
         //Fornisco il modello in formato json che mi aspetto come risultato
         Request += 'Use this model json for response ';
-        CountryRegion.GetJson().WriteTo(ResultModel);
+
+        //Il parametro true serve per ricevedere il json senza valori
+        CountryRegion.GetJson(true).WriteTo(ResultModel);
         Request += ResultModel;
 
         //Puntualizzazioni

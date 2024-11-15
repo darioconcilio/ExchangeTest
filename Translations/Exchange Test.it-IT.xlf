@@ -3,6 +3,18 @@
   <file datatype="xml" source-language="en-US" target-language="it-IT" original="Exchange Test">
     <body>
       <group id="body">
+        <trans-unit id="Codeunit 7228971 - Method 3050346346 - NamedType 1036247977" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Token limit exceeded</source>
+          <target state="translated">Limite di token superato</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Exchange Copilot - Method Chat - NamedType MaxModelRequestTokensErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2144157031 - Method 3867556164 - NamedType 1112260318" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IA: Generating...</source>
+          <target state="translated">IA: Generazione...</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Exchange Utilities - Method GetCountries - NamedType ChattingTxt</note>
+        </trans-unit>
         <trans-unit id="Table 3145283264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Country By Currency</source>
           <target state="translated">Paese per valuta</target>
@@ -59,7 +71,7 @@
         </trans-unit>
         <trans-unit id="Table 658156254 - Method 2371529633 - NamedType 1178781371" size-unit="char" translate="yes" xml:space="preserve">
           <source>Retrieving requested information, in progress..</source>
-          <target state="translated">Recupero delle informazioni richieste, in corso...</target>
+          <target state="translated">Recupero delle informazioni richieste, in corso.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table Exchange Currency Info - Method UpdateInfo - NamedType ProcessLbl</note>
         </trans-unit>
@@ -221,10 +233,63 @@
         </trans-unit>
         <trans-unit id="PageExtension 151086385 - Action 2255690061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4081634891">
           <source>Additional Info</source>
-          <target state="translated">Info Aggiuntive</target>
-          <note from="XLIFF Sync" annotates="general" priority="1">Source text has changed. Please review the translation.</note>
+          <target state="translated">Informazioni aggiuntive</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Currency Utility - Action GetCurrencyInfoByCurrencyAPI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 2393523163 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Countries stored into Azure Blob Storage!</source>
+          <target state="translated">Paesi archiviati in Archiviazione BLOB di Azure!</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method CreateMyFirstBlob - NamedType DoneMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 2226245082 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data Imported!</source>
+          <target state="translated">Dati importati!</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method ImportTo - NamedType DoneMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Data From BlobStorage (Temp)</source>
+          <target state="translated">Importare dati da BlobStorage (Temp)</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Property 3863440606" size-unit="char" translate="yes" xml:space="preserve">
+          <source>import,azure,storage,blob,country,countries</source>
+          <target state="translated">importazione,azure,archiviazione,blob,paese,paesi</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Property AdditionalSearchTerms</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the country/region of the address.</source>
+          <target state="translated">Specifica il paese o l'area geografica dell'indirizzo.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Control 2447562628 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a two-letter country code defined in ISO 3166-1.</source>
+          <target state="translated">Specifica un codice paese di due lettere definito nella norma ISO 3166-1.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Control ISO Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the country/region of the address.</source>
+          <target state="translated">Specifica il paese o l'area geografica dell'indirizzo.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Action 15074807 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import data from Azure BLOB Storage</source>
+          <target state="translated">Importare dati da Archiviazione BLOB di Azure</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Action ImportData - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1220299571 - Action 15074807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Data</source>
+          <target state="translated">Importa dati</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Import Data From BlobStorage - Action ImportData - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4063872663 - Action 3077359538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
           <source>AI Utilities</source>
@@ -233,8 +298,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action AIUtilities - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4063872663 - Action 1968785495 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
-          <source>IA cans find additional information of missed countries for create new Country/Region in Business Central</source>
-          <target state="translated">IA può trovare ulteriori informazioni sui paesi mancanti per creare un nuovo paese in Business Central</target>
+          <source>AI can find additional information for missing countries to create new Country/Region entries in Business Central</source>
+          <target state="translated">L'intelligenza artificiale può trovare informazioni aggiuntive per i paesi mancanti per creare nuove voci di paese/regione in Business Central</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action GetMissedCountries - Property ToolTip</note>
         </trans-unit>
@@ -244,11 +309,35 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action GetMissedCountries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 3953926650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Storage Account</source>
+          <target state="translated">Account di archiviazione</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action StorageAccountUtilities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 4069550845 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source/>
+          <target state="needs-translation"/>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action BlobStorageAccount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 4069550845 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Blob Storage Account</source>
+          <target state="translated">Account di archiviazione BLOB</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action BlobStorageAccount - Property Caption</note>
+        </trans-unit>
         <trans-unit id="EnumExtension 3595332187 - EnumValue 4265970709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3058546390">
           <source>Exchange</source>
           <target state="translated">Scambio</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Exc. Copilot Cap. Ext. - EnumValue Exchange - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PermissionSet 2556694695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange Test</source>
+          <target state="translated">Test di scambio</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet ExchangeTest - Property Caption</note>
         </trans-unit>
       </group>
     </body>

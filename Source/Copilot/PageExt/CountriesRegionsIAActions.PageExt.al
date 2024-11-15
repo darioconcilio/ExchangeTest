@@ -33,6 +33,27 @@ pageextension 50102 "Countries/Regions IA Actions" extends "Currency Info Card"
 
                     end;
                 }
+
+            }
+
+            group(StorageAccountUtilities)
+            {
+                Caption = 'Storage Account';
+
+                action(BlobStorageAccount)
+                {
+                    Caption = 'Blob Storage Account';
+                    ToolTip = '';
+                    Image = Archive;
+                    ApplicationArea = All;
+
+                    trigger OnAction()
+                    var
+                        BlobStorageMnt: codeunit "BlobStorage Management";
+                    begin
+                        BlobStorageMnt.CreateMyFirstBlob(Rec);
+                    end;
+                }
             }
         }
     }
