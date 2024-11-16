@@ -313,6 +313,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action UploadFilebyUser - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4007767091 - Action 610341077 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>It uploads to Azure File Share</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Sales Invoice Ext - Action ArchiveToAzureFileShare - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4007767091 - Action 610341077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Archite To Azure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Sales Invoice Ext - Action ArchiveToAzureFileShare - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4007767091 - Action 610341077 - Method 1377591017 - NamedType 86219493" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 4007767091">
+          <source>%1 - %2.pdf</source>
+          <note from="Developer" annotates="general" priority="2">%1=Document No.,%2=Customer Name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Sales Invoice Ext - Action ArchiveToAzureFileShare - Method OnAction - NamedType PDFFileNameTxt</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4007767091 - Action 610341077 - Method 1377591017 - NamedType 572047844" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 4007767091">
+          <source>Report selection for Sales Invoice not found</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Sales Invoice Ext - Action ArchiveToAzureFileShare - Method OnAction - NamedType ReportNotFoundErr</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4007767091 - Action 610341077 - Method 1377591017 - NamedType 4017871955" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 4007767091">
+          <source>Error dureing rendering report</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Sales Invoice Ext - Action ArchiveToAzureFileShare - Method OnAction - NamedType RenderingReportErr</note>
+        </trans-unit>
         <trans-unit id="EnumExtension 3595332187 - EnumValue 4265970709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3058546390">
           <source>Exchange</source>
           <note from="Developer" annotates="general" priority="2"></note>
