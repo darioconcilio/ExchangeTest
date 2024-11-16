@@ -38,12 +38,12 @@ pageextension 50102 "Countries/Regions IA Actions" extends "Currency Info Card"
 
             group(StorageAccountUtilities)
             {
-                Caption = 'Storage Account';
+                Caption = 'Storage Account Utilities';
 
-                action(BlobStorageAccount)
+                action(UploadCountriesByCurrencyToBlobStorage)
                 {
-                    Caption = 'Blob Storage Account';
-                    ToolTip = '';
+                    Caption = 'Upload current currency to Blob Storage';
+                    ToolTip = 'Create a json file relative of countries that uses current currency and upload to Azure Blob Storage';
                     Image = Archive;
                     ApplicationArea = All;
 
@@ -51,7 +51,22 @@ pageextension 50102 "Countries/Regions IA Actions" extends "Currency Info Card"
                     var
                         BlobStorageMnt: codeunit "BlobStorage Management";
                     begin
-                        BlobStorageMnt.CreateMyFirstBlob(Rec);
+                        BlobStorageMnt.LoadBlobByCurrency(Rec);
+                    end;
+                }
+
+                action(UploadFilebyUser)
+                {
+                    Caption = 'Upload by User to Blob Storage';
+                    ToolTip = 'Create a json file relative of countries that uses current currency and upload to Azure Blob Storage';
+                    Image = ExportFile;
+                    ApplicationArea = All;
+
+                    trigger OnAction()
+                    var
+                        BlobStorageMnt: codeunit "BlobStorage Management";
+                    begin
+                        BlobStorageMnt.LoadFileByUser();
                     end;
                 }
             }

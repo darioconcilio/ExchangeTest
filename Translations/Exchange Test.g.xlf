@@ -198,15 +198,45 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Currency Utility - Action GetCurrencyInfoByCurrencyAPI - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 2050128003 - Method 2393523163 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Countries stored into Azure Blob Storage!</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method CreateMyFirstBlob - NamedType DoneMsg</note>
-        </trans-unit>
         <trans-unit id="Codeunit 2050128003 - Method 2226245082 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
           <source>Data Imported!</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method ImportTo - NamedType DoneMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 288099595 - NamedType 4288424883" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Countries stored into Azure Blob Storage!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadBlobByCurrency - NamedType DoneMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 288099595 - NamedType 2152162224" size-unit="char" translate="yes" xml:space="preserve">
+          <source>countries_%1.json</source>
+          <note from="Developer" annotates="general" priority="2">%1=currency code</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadBlobByCurrency - NamedType BlobNameTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 379270710 - NamedType 1244490648" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All files (*.*)|*.*|Json files (*.json)|*.json</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadFileByUser - NamedType FiltroFileTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 379270710 - NamedType 2637267728" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select file to upload</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadFileByUser - NamedType SelectFileLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 379270710 - NamedType 464298762" size-unit="char" translate="yes" xml:space="preserve">
+          <source>File "%1" uploaded correctly in Azure Blob Storage</source>
+          <note from="Developer" annotates="general" priority="2">%1=Uploaded file name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadFileByUser - NamedType UploadOkMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 379270710 - NamedType 3548693822" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error dureing uploading of file "%1" in Azure Blob Storage</source>
+          <note from="Developer" annotates="general" priority="2">%1=Uploaded file name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadFileByUser - NamedType NotUploadedErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2050128003 - Method 379270710 - NamedType 3045714019" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Upload cancelled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BlobStorage Management - Method LoadFileByUser - NamedType UploadCancelledMsg</note>
         </trans-unit>
         <trans-unit id="Page 1220299571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Import Data From BlobStorage (Temp)</source>
@@ -259,19 +289,29 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action GetMissedCountries - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4063872663 - Action 3953926650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
-          <source>Storage Account</source>
+          <source>Storage Account Utilities</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action StorageAccountUtilities - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 4063872663 - Action 4069550845 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
-          <source></source>
+        <trans-unit id="Page 4063872663 - Action 2871333340 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Create a json file relative of countries that uses current currency and upload to Azure Blob Storage</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action BlobStorageAccount - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action UploadCountriesByCurrencyToBlobStorage - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 4063872663 - Action 4069550845 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
-          <source>Blob Storage Account</source>
+        <trans-unit id="Page 4063872663 - Action 2871333340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Upload current currency to Blob Storage</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action BlobStorageAccount - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action UploadCountriesByCurrencyToBlobStorage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 3791419425 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Create a json file relative of countries that uses current currency and upload to Azure Blob Storage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action UploadFilebyUser - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4063872663 - Action 3791419425 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4063872663">
+          <source>Upload by User to Blob Storage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Countries/Regions IA Actions - Action UploadFilebyUser - Property Caption</note>
         </trans-unit>
         <trans-unit id="EnumExtension 3595332187 - EnumValue 4265970709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 3058546390">
           <source>Exchange</source>

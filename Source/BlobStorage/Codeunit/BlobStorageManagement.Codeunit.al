@@ -9,16 +9,18 @@ codeunit 50105 "BlobStorage Management"
 
     local procedure InitConnection()
     begin
-        //DATI HARDCODED ILLEGALE!!!!!!
-        SharedKey := SecretText.SecretStrSubstNo('0J32aBHEVeRvEbFwMkcX6AF226e+Yep8Z3WMaPhX+3vVUMYKqa5q/aTaHVT8KYEdFH3SBIrVjugm+ASt7CHyXA==');
 
+        //Recupero la ShareKey per accedere ad Azure Blob Storage
+        IsolatedStorage.Get(IsolatedStorageNameShareKeyTxt, SharedKey);
+
+        //Init dell'autorizzazione di accesso
         Authorization := StorageServiceAuthorization.CreateSharedKey(SharedKey);
 
-        //DATI HARDCODED ILLEGALE!!!!!!
-        ABSBlobClient.Initialize('vdsblobexample', 'contenitoretest', Authorization);
+        //Init per il collegamento al container
+        ABSBlobClient.Initialize(StorageAccountTxt, ContainerTxt, Authorization);
     end;
 
-    procedure CreateMyFirstBlob(ExchangeCurrencyInfo: Record "Exchange Currency Info")
+    procedure LoadBlobByCurrency(ExchangeCurrencyInfo: Record "Exchange Currency Info")
     var
 
         CountryByCurrency: Record "Country By Currency";
@@ -27,6 +29,7 @@ codeunit 50105 "BlobStorage Management"
         CountryArray: JsonArray;
         Content: Text;
         DoneMsg: Label 'Countries stored into Azure Blob Storage!';
+        BlobNameTxt: Label 'countries_%1.json', Comment = '%1=currency code';
     begin
 
         InitConnection();
@@ -47,13 +50,41 @@ codeunit 50105 "BlobStorage Management"
 
         CountryArray.WriteTo(Content);
 
-        Response := ABSBlobClient.PutBlobBlockBlobText('countries', Content);
+        Response := ABSBlobClient.PutBlobBlockBlobText(StrSubstNo(BlobNameTxt, CountryByCurrency."Currency Code"), Content);
 
         if not Response.IsSuccessful() then
             Error(Response.GetError());
 
         Message(DoneMsg);
     end;
+
+    procedure LoadFileByUser()
+    var
+        FileNameToUpload: Text;
+        FiltroFileTxt: Label 'All files (*.*)|*.*|Json files (*.json)|*.json';
+        SelectFileLbl: Label 'Select file to upload';
+        FileInStream: InStream;
+        UploadOkMsg: Label 'File "%1" uploaded correctly in Azure Blob Storage', Comment = '%1=Uploaded file name';
+        NotUploadedErr: Label 'Error dureing uploading of file "%1" in Azure Blob Storage', Comment = '%1=Uploaded file name';
+        UploadCancelledMsg: Label 'Upload cancelled';
+    begin
+
+        if UploadIntoStream(SelectFileLbl, '', FiltroFileTxt, FileNameToUpload, FileInStream) then begin
+
+            InitConnection();
+
+            // Carica il file nel container specificato
+            //Risposta := ABSBlobClient.UploadBlob(ContainerName, FileNameToUpload, FileInStream);
+            Response := ABSBlobClient.PutBlobBlockBlobStream(FileNameToUpload, FileInStream);
+
+            if Response.IsSuccessful() then
+                Message(UploadOkMsg, FileNameToUpload)
+            else
+                Message(NotUploadedErr, FileNameToUpload);
+        end else
+            Message(UploadCancelledMsg);
+    end;
+
 
     procedure ImportTo(var CountryRegionTemp: Record "Country/Region" temporary)
     var
@@ -91,4 +122,7 @@ codeunit 50105 "BlobStorage Management"
         Response: Codeunit "ABS Operation Response";
         Authorization: Interface "Storage Service Authorization";
         SharedKey: SecretText;
+        IsolatedStorageNameShareKeyTxt: Label 'BlobStorageKey', Locked = true;
+        StorageAccountTxt: Label 'vdsblobexample', Locked = true;
+        ContainerTxt: Label 'contenitoretest', Locked = true;
 }
