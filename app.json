@@ -11,6 +11,18 @@
   "url": "",
   "logo": "",
   "dependencies": [
+      {
+        "id": "93a71c5e-237e-47e8-835b-1a7f9e844f1b",
+        "name": "Create Product Information With Copilot",
+        "version": "25.0.0.0",
+        "publisher": "Microsoft"
+      },
+      {
+        "id": "63c9fbe6-d4f3-458c-8c25-644c90a0874a",
+        "name": "Bank Account Reconciliation With AI",
+        "version": "25.0.0.0",
+        "publisher": "Microsoft"
+      }
   ],
   "screenshots": [],
   "platform": "1.0.0.0",
@@ -26,7 +38,7 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "13.1",
+  "runtime":"15.0",
   "features": [
     "NoImplicitWith",
     "TranslationFile"

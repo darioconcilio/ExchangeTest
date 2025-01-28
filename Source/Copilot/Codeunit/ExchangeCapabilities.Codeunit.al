@@ -25,7 +25,7 @@ codeunit 50102 "Exchange Capabilities"
     local procedure RegisterCapability()
     var
         CopilotCapability: Codeunit "Copilot Capability";
-        LearnMoreUrlTxt: Label 'https://www.vitadasviluppator.it/FakeExchangeTest', Locked = true;
+        LearnMoreUrlTxt: Label 'https://www.vitadasviluppatore.it/FakeExchangeTest', Locked = true;
     begin
         if not CopilotCapability.IsCapabilityRegistered(Enum::"Copilot Capability"::Exchange) then
             CopilotCapability.RegisterCapability(Enum::"Copilot Capability"::Exchange,

@@ -20,4 +20,6 @@ codeunit 50100 "Install Management"
         IsolatedStorage.SetEncrypted('SAS', 'sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-12-05T14:57:52Z&st=2024-11-28T06:57:52Z&spr=https&sig=Sbx%2F5HzJuPqmUEUKpzUuQUYYGOcdH7K98hWN1vV9b6w%3D', DataScope::Module);
     end;
 
+
+
 }
